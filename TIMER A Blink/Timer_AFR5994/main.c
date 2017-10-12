@@ -97,11 +97,11 @@ int main(void)
 __interrupt void Timer1_A0_ISR(void)
 
 {
-    P1OUT ^= BIT0;
+    P1OUT ^= BIT0; //toggle led 1.0
 }
 
 #pragma vector = TIMER0_A0_VECTOR
 __interrupt void Timer0_A0_ISR(void)
 {
-    P1OUT ^= BIT1;
+    P1OUT ^= BIT1; //toggle led 1.1
 }
